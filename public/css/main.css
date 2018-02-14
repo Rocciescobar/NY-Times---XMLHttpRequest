@@ -1,0 +1,11 @@
+.styleUl {
+  background-color:#fff;
+  padding: 20px;
+}
+
+.styleLi {
+  list-style-image: url('../assets/images/archivo.png');
+  list-style-position: outside;
+  padding: 5px;
+  margin-left: 35px;
+}
