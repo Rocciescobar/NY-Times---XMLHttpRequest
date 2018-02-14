@@ -24,25 +24,29 @@ function handleError() {
 
 function addNews() {
   const data = JSON.parse(this.responseText);
-  console.log(data.response.docs);  
+  // console.log(data.response.docs);  
   const articles = data.response.docs;
   
   articles.forEach(element => {
-    console.log(element);    
+    // console.log(element);    
     const title = element.headline.main;
     const byLine = element.byline.original;
+    const image = element.multimedia[4].url;
     const snippet = element.snippet;
     const webUrl = element.web_url;
     
     responseContainer.innerHTML += `
-    <div class="card m-5">
-      <div class="card-header">
+    <div class="card m-5 container">
+      <div class="card-header row">
         <h5>${title}</h5>
         <p class"font-weight-light">${byLine}</p>
       </div>
-      <div class="card-body">
-        <p class="card-text">${snippet}</p>
-        <a href="${webUrl}" target="_blank" class="btn btn-primary">More info</a>
+      <div class="card-body row">
+        <img class="rounded img-fluid col-5" src="https://www.nytimes.com/${image}" alt="image">
+        <div class="col-7">
+          <p class="card-text mt-2">${snippet}</p>
+          <a href="${webUrl}" target="_blank" class="btn btn-primary">More info</a>
+        </div>
       </div>
     </div>
     `;   
