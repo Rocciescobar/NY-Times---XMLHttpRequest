@@ -35,7 +35,7 @@ El proyecto se desarrolló siguiendo los siguientes pasos:
 * En el navegador se muestran 10 noticias/artículos y por cada uno se tiene un botón para re-direccionar al usuario a la página del NY Times y leerlo completo.
 
 ## Demo
-Para ver el demo dar click [aquí](https://rocciescobar.github.io/NY-Times_XMLHttpRequest/public/index.html "titulo").
+Para ver el demo dar click [aquí](https://rocciescobar.github.io/NYTimes_XMLHttpRequest/public/index.html "titulo").
 
 
 ## Ejemplo
