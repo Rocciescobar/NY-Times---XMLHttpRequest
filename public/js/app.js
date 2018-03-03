@@ -36,16 +36,18 @@ function addNews() {
     const webUrl = element.web_url;
     
     responseContainer.innerHTML += `
-    <div class="card m-5 container">
-      <div class="card-header row">
-        <h5>${title}</h5>
-        <p class"font-weight-light">${byLine}</p>
-      </div>
-      <div class="card-body row">
-        <img class="rounded img-fluid col-5" src="https://www.nytimes.com/${image}" alt="image">
-        <div class="col-7">
-          <p class="card-text mt-2">${snippet}</p>
-          <a href="${webUrl}" target="_blank" class="btn btn-primary">More info</a>
+    <div class="col-12 col-sm-12 col-md-6 my-3">
+      <div class="card">
+        <div class="card-header">
+          <h5>${title}</h5>
+          <p class class="font-weight-light">${byLine}</p>
+        </div>
+        <div class="card-body row">
+          <img class="rounded img-fluid col-12 col-sm-5" src="https://www.nytimes.com/${image}" alt="image">
+          <div class="col-12 col-sm-7">
+            <p class="card-text mt-2">${snippet}</p>
+            <a href="${webUrl}" target="_blank" class="btn btn-primary">More info</a>
+          </div>
         </div>
       </div>
     </div>
